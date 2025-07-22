@@ -1,62 +1,38 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>My Portfolio - Contact</title>
-<link rel="stylesheet" href="styles.css" />
-  <script defer src="script.js"></script>
-</head>
-<body>
-  <header>
-    <h1>Contact Me</h1>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="childhood.html">Childhood</a>
-      <a href="education.html">Education</a>
-      <a href="skills.html">Skills</a>
-      <a href="future.html">Future</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-  </header>
-  <main>
-    <form id="contactForm">
-      <label for="name">Name:</label><br />
-      <input type="text" id="name" name="name" required /><br /><br />
-
-      <label for="email">Email:</label><br />
-      <input type="email" id="email" name="email" required /><br /><br />
-text-decoration: none;
+css
+body {
+  background-image: url('images/background.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: #fff; /* White text for better contrast on background */
 }
 
-nav a:hover {
-  text-decoration: underline;
-}
-
-main {
+/* General container styling */
+.container {
+  background-color: rgba(0, 0, 0, 0.6); /* semi-transparent dark background */
   padding: 20px;
-  background-color: white;
   margin: 20px auto;
   max-width: 800px;
   border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
-footer {
+/* Header styles */
+h1, h2, h3 {
+  color: #ffcc00; /* yellow color for headings */
   text-align: center;
-  margin-top: 40px;
-  color: #777;
 }
 
-      <label for="message">Message:</label><br />
-      <textarea id="message" name="message" required></textarea><br /><br />
+/* Paragraph styling */
+p {
+  line-height: 1.6;
+}
 
-      <button type="submit">Send</button>
-    </form>
-    <p id="formResponse"></p>
-  </main>
-  <footer>
-    <p>&copy; 2025 My Portfolio</p>
-  </footer>
-</body>
-</html>
+/* Image styling */
+img {
+  display: block;
+  margin: 20px auto;
+  max-width: 100%;
+  border-radius: 10px;
+}
