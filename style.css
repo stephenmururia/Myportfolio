@@ -27,6 +27,27 @@
 
       <label for="email">Email:</label><br />
       <input type="email" id="email" name="email" required /><br /><br />
+text-decoration: none;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+main {
+  padding: 20px;
+  background-color: white;
+  margin: 20px auto;
+  max-width: 800px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+footer {
+  text-align: center;
+  margin-top: 40px;
+  color: #777;
+}
 
       <label for="message">Message:</label><br />
       <textarea id="message" name="message" required></textarea><br /><br />
